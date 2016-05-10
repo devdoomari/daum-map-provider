@@ -13,7 +13,7 @@
     "build_copy_dts_files": "$(npm bin)/copyfiles -u 1 'lib_es6/*.d.ts' lib && $(npm bin)/copyfiles -u 1 'lib_es6/**/*.d.ts' lib",
     "lib_es6_to_lib": "npm run build_es6_to_es5 && npm run build_copy_dts_files",
     "build": "npm run build_ts_lib_es6 && npm run lib_es6_to_lib",
-    "serve_examples": "$(npm bin)/webpack-dev-server --config examples/webpack.config.js --port 8081",
+    "serve_examples": "$(npm bin)/webpack-dev-server --config examples/webpack.config.js --port 8081"
   },
   "repository": {
     "type": "git",
