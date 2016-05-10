@@ -7,12 +7,13 @@
     "definition": "index.d.ts"
   },
   "scripts": {
-    "build": "node_modules/.bin/webpack --config examples/webpack_config/build.js --bail -p",
-    "clean": "rm -r examples/dist dist",
-    "watch_examples": "node_modules/.bin/webpack --watch --config examples/webpack_config/build.js --bail -p",
-    "dev": "node_modules/.bin/webpack-dev-server --config examples/webpack_config/config.js --history-api-fallback",
-    "_serve_examples": "$(npm bin)/webpack-dev-server --config examples/webpack.config.js --port 8081",
-    "_watch_ts_for_examples": "$(npm bin)/tsc --watch"
+    "clean": "rm -rf examples/dist dist lib lib_es6",
+    "build_ts_lib_es6": "$(npm bin)/typings install && $(npm bin)/tsc",
+    "build_es6_to_es5": "$(npm bin)/babel lib_es6 -d lib",
+    "build_copy_dts_files": "$(npm bin)/copyfiles -u 1 'lib_es6/*.d.ts' lib && $(npm bin)/copyfiles -u 1 'lib_es6/**/*.d.ts' lib",
+    "lib_es6_to_lib": "npm run build_es6_to_es5 && npm run build_copy_dts_files",
+    "build": "npm run build_ts_lib_es6 && npm run lib_es6_to_lib",
+    "serve_examples": "$(npm bin)/webpack-dev-server --config examples/webpack.config.js --port 8081",
   },
   "repository": {
     "type": "git",
@@ -57,7 +58,7 @@
     "postscribe": "^2.0.1",
     "raw-loader": "^0.5.1",
     "react-bootstrap": "^0.28.1",
-    "react-modular-map": "git+ssh://git@github.com/devdoomari/react-map.git#dist_57",
+    "react-modular-map": "git+ssh://git@github.com/devdoomari/react-map.git#dist_61",
     "typings": "^0.8.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",

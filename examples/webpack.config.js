@@ -59,11 +59,11 @@ module.exports = {
       exclude: /node_modules/,
     }, {
       test: /\.ts$/,
-      loader: 'ts',
+      loader: 'babel!ts',
       exclude: /node_modules/,
     }, {
       test: /\.tsx$/,
-      loader: 'ts',
+      loader: 'babel!ts',
       exclude: /node_modules/,
     }, {
       // Copy files to output,

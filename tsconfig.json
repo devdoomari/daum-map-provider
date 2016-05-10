@@ -9,8 +9,8 @@
     "experimentalDecorators": true,
     "noLib": false,
     "jsx": "react",
-    "outDir": "./__tmp__",
-    "rootDir": "."
+    "outDir": "./lib_es6",
+    "rootDir": "./src"
   },
   "filesGlob": [
     "src/*.ts",

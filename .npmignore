@@ -1,6 +1,6 @@
 node_modules
 dist
-typings
+umd
 __tmp__
-lib
+*.log
 lib_es6
