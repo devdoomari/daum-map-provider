@@ -11,7 +11,7 @@ import _ from 'lodash';
 
 import {
   DaumMapProvider
-} from '../__tmp__/src';
+} from '../src';
 
 import {
   Map,
@@ -32,8 +32,6 @@ class MapViewDemo extends Component {
     });
     this.state = {
     };
-    const asd = Behaviors;
-    debugger;
   }
   render() {
     return (
