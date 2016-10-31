@@ -54,7 +54,7 @@
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
-    "jest-cli": "^0.10.0",
+    "jest-cli": "^16.0.2",
     "postscribe": "^2.0.1",
     "raw-loader": "^0.5.1",
     "react-bootstrap": "^0.28.1",
