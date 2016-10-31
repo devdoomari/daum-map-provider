@@ -42,9 +42,12 @@
     "keymirror": "^0.1.1",
     "lodash": "^4.9.0",
     "node-uuid": "^1.4.7",
-    "q": "^1.4.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "postscribe": "^2.0.6",
+    "q": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.2",
@@ -60,7 +63,7 @@
     "postscribe": "^2.0.1",
     "raw-loader": "^0.5.1",
     "react-bootstrap": "^0.28.1",
-    "react-modular-map": "git+ssh://git@github.com/devdoomari/react-map.git#dist_63",
+    "react-modular-map": "git+ssh://git@github.com/devdoomari/react-map.git#dist_65",
     "ts-loader": "^0.8.2",
     "typings": "^1.5.0",
     "webpack": "^1.13.0",
