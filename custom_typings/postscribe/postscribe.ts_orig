@@ -1,3 +1,0 @@
-declare module "postscribe" {
-  export function postscribe(el?: any, html?: any, options?: any): any;
-}

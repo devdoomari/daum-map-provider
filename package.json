@@ -60,7 +60,7 @@
     "react-bootstrap": "^0.28.1",
     "react-modular-map": "git+ssh://git@github.com/devdoomari/react-map.git#dist_63",
     "ts-loader": "^0.8.2",
-    "typings": "^0.8.1",
+    "typings": "^1.5.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.6.0"

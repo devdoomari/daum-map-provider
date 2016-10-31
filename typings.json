@@ -1,14 +1,14 @@
 {
   "name": "react-daum-map",
-  "version": false,
-  "dependencies": {},
-  "ambientDependencies": {
+  "dependencies": {
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725",
+    "react-dom": "registry:npm/react-dom#15.0.1+20160826174104"
+  },
+  "globalDependencies": {
     "core-decorators": "registry:dt/core-decorators#0.10.0+20160316155526",
-    "lodash": "registry:dt/lodash#3.10.0+20160330154726",
-    "node": "registry:dt/node#4.0.0+20160412142033",
-    "q": "registry:dt/q#0.0.0+20160417152954",
-    "react": "registry:dt/react#0.14.0+20160412154040",
-    "react-bootstrap": "registry:dt/react-bootstrap#0.0.0+20160322135206",
-    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
+    "node": "registry:dt/node#6.0.0+20161019125345",
+    "q": "registry:dt/q#0.0.0+20161004185634",
+    "react": "registry:dt/react#0.14.0+20161008064207",
+    "react-bootstrap": "registry:dt/react-bootstrap#0.0.0+20160806072414"
   }
 }
