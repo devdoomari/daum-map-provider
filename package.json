@@ -50,6 +50,7 @@
     "babel-jest": "^10.0.1",
     "babel-polyfill": "^6.7.4",
     "codemirror": "^5.9.0",
+    "copyfiles": "^1.0.0",
     "eslint-plugin-jasmine": "^1.8.1",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.5",
